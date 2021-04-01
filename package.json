@@ -64,6 +64,7 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "ci": "jest --config jest.config.js --coverage",
     "version": "conventional-changelog -p emojis -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
-    "prepublishOnly": "npm-run-all clean test start"
+    "prepublishOnly": "npm-run-all clean test start",
+    "prepare": "npm run start"
   }
 }
